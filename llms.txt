@@ -1,0 +1,19 @@
+# LS Brandworks
+
+> LS Brandworks provides real estate marketing and growth consulting for property developers, with a focus on positioning, sales processes, and project launches.
+
+The website describes three core engagements: a 15-day Project Marketing Audit, a 45-day Sales Acceleration Program, and 90-day New Project Launch planning. It also describes focused support for CRM automation, developer brand building, sales conversion training, and channel partner growth. The website is the source for current service details.
+
+## Website
+
+- [LS Brandworks homepage](https://www.lsbrandworks.com/): Overview of the firm, its services, methodology, and contact options.
+- [Project Marketing Audit](https://www.lsbrandworks.com/#project-marketing-audit): A 15-day assessment of marketing, positioning, sales funnel, and inventory priorities that provides a 90-day action plan.
+- [Sales Acceleration Program](https://www.lsbrandworks.com/#sales-acceleration-program): A 45-day implementation engagement focused on positioning, lead conversion, follow-up, channel partners, and reporting.
+- [New Project Launch](https://www.lsbrandworks.com/#new-project-launch): 90-day launch planning covering positioning, campaigns, media budgets, lead forecasts, and sales channels.
+- [Methodology](https://www.lsbrandworks.com/#method): Diagnose, design, activate, and govern.
+- [Frequently asked questions](https://www.lsbrandworks.com/#faq): Answers on audits, real estate lead conversion, launch planning, and CRM follow-up.
+- [Contact and discovery call](https://www.lsbrandworks.com/#contact): Email and phone contact, plus a free 30-minute discovery call.
+
+## Optional
+
+- [Book a discovery call on Calendly](https://calendly.com/lalith-sravan-lsbrandworks/30min): External scheduling page for the free 30-minute call.
