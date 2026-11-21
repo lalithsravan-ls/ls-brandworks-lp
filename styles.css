@@ -1306,6 +1306,22 @@ h2 {
   border-color: var(--charcoal);
 }
 
+.booking-panel > .booking-privacy-note {
+  margin: 18px 0 0;
+  font-size: var(--type-small);
+}
+
+.booking-privacy-note a {
+  color: var(--brand-maroon);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.booking-privacy-note a:hover,
+.booking-privacy-note a:focus-visible {
+  color: var(--charcoal);
+}
+
 .calendly-inline-widget {
   width: 100%;
   min-width: 0;
@@ -1363,7 +1379,9 @@ h2 {
 }
 
 .footer-nav a:hover,
-.footer-nav a:focus-visible {
+.footer-nav a:focus-visible,
+.footer-bottom a:hover,
+.footer-bottom a:focus-visible {
   color: var(--brand-maroon);
 }
 
@@ -1374,6 +1392,283 @@ h2 {
   padding-top: 24px;
   border-top: 1px solid var(--line-dark);
   color: rgba(38, 38, 38, 0.68);
+}
+
+/* Privacy Policy */
+
+.policy-page {
+  background: #e9f3f8;
+}
+
+.policy-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(105deg, rgba(51, 0, 13, 0.98) 3%, rgba(127, 0, 25, 0.92) 65%, rgba(127, 0, 25, 0.64)), url("assets/images/re-strategy-hero-landscape.webp") center 48% / cover;
+  color: var(--white);
+}
+
+.policy-hero::after {
+  position: absolute;
+  right: -5vw;
+  bottom: -16vw;
+  width: clamp(240px, 42vw, 660px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  box-shadow: 0 0 0 68px rgba(255, 255, 255, 0.035), 0 0 0 136px rgba(255, 255, 255, 0.025);
+  content: "";
+  pointer-events: none;
+}
+
+.policy-hero-inner {
+  position: relative;
+  z-index: 1;
+  padding-top: clamp(174px, 17vw, 252px);
+  padding-bottom: clamp(90px, 10vw, 154px);
+}
+
+.policy-hero h1 {
+  max-width: 12ch;
+  margin: 0 0 24px;
+  font-size: clamp(3.3rem, 8vw, 7.5rem);
+  line-height: 0.98;
+}
+
+.policy-hero h1 span {
+  color: var(--brand-blue);
+}
+
+.policy-hero-intro {
+  max-width: 44ch;
+  margin-bottom: 32px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(1rem, 1.55vw, 1.25rem);
+}
+
+.policy-back-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.72);
+  font-size: var(--type-label);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.policy-back-link:hover,
+.policy-back-link:focus-visible {
+  color: var(--brand-blue);
+  border-color: var(--brand-blue);
+}
+
+.policy-hero :focus-visible {
+  outline-color: var(--brand-blue);
+}
+
+.policy-section {
+  padding-block: clamp(60px, 8vw, 120px);
+  background: radial-gradient(circle at 10% 6%, rgba(255, 255, 255, 0.9), transparent 26%), #e9f3f8;
+}
+
+.policy-layout {
+  display: grid;
+  align-items: start;
+  gap: clamp(24px, 4vw, 72px);
+  grid-template-columns: minmax(130px, 0.25fr) minmax(0, 1fr);
+}
+
+.policy-side-note {
+  position: sticky;
+  top: 132px;
+  color: var(--brand-maroon);
+}
+
+.policy-side-note span {
+  display: block;
+  border-bottom: 1px solid rgba(127, 0, 25, 0.35);
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 800;
+  letter-spacing: -0.1em;
+  line-height: 0.9;
+}
+
+.policy-side-note p {
+  max-width: 12ch;
+  padding-top: 18px;
+  font-size: var(--type-label);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.policy-document {
+  min-width: 0;
+  padding: clamp(24px, 5vw, 76px);
+  border: 1px solid rgba(127, 0, 25, 0.11);
+  border-top: 5px solid var(--brand-maroon);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 24px 70px rgba(38, 38, 38, 0.07);
+  font-size: clamp(0.96rem, 1.2vw, 1.06rem);
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.policy-document > p:first-child {
+  display: inline-block;
+  margin-bottom: 32px;
+  padding: 8px 14px;
+  border: 1px solid rgba(127, 0, 25, 0.22);
+  border-radius: 999px;
+  color: var(--brand-maroon);
+  font-size: var(--type-small);
+  font-weight: 800;
+}
+
+.policy-document h2,
+.policy-document h3,
+.policy-document h4 {
+  max-width: none;
+  color: var(--brand-maroon);
+  line-height: 1.2;
+  scroll-margin-top: 112px;
+}
+
+.policy-document h2 {
+  margin: 64px 0 20px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(127, 0, 25, 0.18);
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+}
+
+.policy-document h3 {
+  margin: 38px 0 15px;
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+}
+
+.policy-document h4 {
+  margin: 30px 0 12px;
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+}
+
+.policy-document p,
+.policy-document li {
+  max-width: 80ch;
+}
+
+.policy-document p,
+.policy-document ul {
+  margin-bottom: 20px;
+}
+
+.policy-document ul {
+  padding-left: 1.4em;
+}
+
+.policy-document li + li {
+  margin-top: 10px;
+}
+
+.policy-document a {
+  color: var(--brand-maroon);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.policy-document a:hover,
+.policy-document a:focus-visible {
+  color: #ad2844;
+}
+
+.policy-document .heading-anchor {
+  display: inline-block;
+  margin-left: 0.35em;
+  opacity: 0.45;
+  text-decoration: none;
+}
+
+.policy-document #contents {
+  margin-bottom: 0;
+  padding: 26px 30px 0;
+  border: 0;
+  border-radius: 16px 16px 0 0;
+  background: #dcecf5;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+}
+
+.policy-document > .toc-list {
+  margin: 0 0 54px;
+  padding: 16px 30px 30px 48px;
+  border-radius: 0 0 16px 16px;
+  background: #dcecf5;
+  font-size: var(--type-small);
+  line-height: 1.55;
+}
+
+.policy-document .toc-list .toc-list {
+  margin-top: 7px;
+  margin-bottom: 8px;
+  padding-left: 1.2em;
+}
+
+.policy-document .toc-list li + li {
+  margin-top: 7px;
+}
+
+.policy-document > .policy-credit {
+  max-width: none;
+  margin: 70px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line-dark);
+  color: var(--ink-muted);
+  font-size: var(--type-small);
+}
+
+@media (max-width: 900px) {
+  .policy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .policy-side-note {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .policy-hero-inner {
+    padding-top: 150px;
+    padding-bottom: 82px;
+  }
+
+  .policy-hero h1 {
+    font-size: clamp(3rem, 15vw, 4.5rem);
+  }
+
+  .policy-section {
+    padding-block: 16px 68px;
+  }
+
+  .policy-document {
+    margin-inline: -16px;
+    padding: 30px 20px 46px;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .policy-document h2 {
+    margin-top: 48px;
+  }
+
+  .policy-document #contents {
+    padding-inline: 20px;
+  }
+
+  .policy-document > .toc-list {
+    padding-right: 18px;
+    padding-left: 38px;
+  }
 }
 
 /* Progressive reveal */
